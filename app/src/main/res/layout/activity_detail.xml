@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bahari"
+    tools:context=".DetailActivity"
+    android:weightSum="2"
+    tools:ignore="HardcodedText">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_kepulauan_derewan">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:id="@+id/viewBack"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:layout_gravity="start|center|top"
+            android:src="@drawable/btn_back"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center|top"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/titleDesc"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textAppearance="@style/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kepulauan Derewan"/>
+
+            <Button
+                android:id="@+id/Desc1"
+                android:layout_gravity="end|bottom"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/titleDesc"
+                android:textAppearance="@style/text_title"
+                android:textSize="18sp"
+                android:text="detail"/>
+
+            <Button
+                android:id="@+id/Desc2"
+                android:layout_gravity="end|bottom"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/Desc1"
+                android:textAppearance="@style/text_title"
+                android:textSize="18sp"
+                android:text="map"/>
+
+            <Button
+                android:id="@+id/Desc3"
+                android:layout_gravity="end|bottom"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/Desc2"
+                android:textAppearance="@style/text_title"
+                android:textSize="18sp"
+                android:text="preview"/>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
