@@ -45,10 +45,11 @@
         android:id="@+id/GridAgro"
         android:layout_margin="50dp"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:rowCount="2"
-        android:columnCount="4">
+        android:columnCount="4"
+        android:layout_weight="1">
 
         <androidx.cardview.widget.CardView
             android:clickable="true"

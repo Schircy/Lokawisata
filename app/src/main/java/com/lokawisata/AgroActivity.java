@@ -15,6 +15,7 @@ import android.widget.ImageView;
 public class AgroActivity extends FragmentActivity {
 
     public final long delay = 250;
+    private static final int REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class AgroActivity extends FragmentActivity {
 
             Intent intent = new Intent(this,MainActivity.class);
             startActivity(intent);
+            finish();
         });
 
         // Card View 1 Listener
@@ -78,8 +80,27 @@ public class AgroActivity extends FragmentActivity {
 
             new Handler().postDelayed(() -> cardView1.setForeground(null),delay);
 
+            // Pindah Activity
             Intent intent = new Intent(this,DetailActivity.class);
-            startActivity(intent);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "bhumi merapi";
+            String lokasi = "Jl. Kaliurang No.Km.20, Sawungan, Hargobinangun, Kec. Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582";
+            String deskripsi = "Taman pertanian tempat pengunjung bisa memerah susu kambing, memberi makan kelinci & selfie di Santorini mini.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FBhumi_Merapi.mp4?alt=media&token=57b35ae1-6a5e-497c-aec6-792babfb9da4";
+            int gambar = R.drawable.img_bhumi_merapi;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 2 Listener
@@ -96,6 +117,28 @@ public class AgroActivity extends FragmentActivity {
             cardView2.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView2.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "kopeng gunungsari";
+            String lokasi = "Jl. Umbul Songo, Kopeng, Kec. Getasan, Semarang, Jawa Tengah 50774";
+            String deskripsi = "Agrowisata Kopeng Gunungsari menyajikan perpaduan keindahan taman bunga yang berpadu dengan kebun buah jambu.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FKopeng_Gunungsari.mp4?alt=media&token=7fcf57ca-0ab8-440a-8393-84425dff6b7a";
+            int gambar = R.drawable.img_kopeng_gunungsari;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 3 Listener
@@ -112,6 +155,28 @@ public class AgroActivity extends FragmentActivity {
             cardView3.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView3.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "kebun raya bogor";
+            String lokasi = "Jl. Ir. H. Juanda No.13, Paledang, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16122";
+            String deskripsi = "Kebun raya luas dan indah yang memamerkan beragam bunga & tanaman tropis.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FKebon_Raya_Bogor.mp4?alt=media&token=e5708661-6d02-441d-a453-3ab4725aa21e";
+            int gambar = R.drawable.img_kebun_raya_bogor;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 4 Listener
@@ -128,6 +193,28 @@ public class AgroActivity extends FragmentActivity {
             cardView4.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView4.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "merapi farma herbal";
+            String lokasi = "Jl. Manunggal Bakti No.9, RW.11, Kalisari, Kec. Ps. Rebo, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13790";
+            String deskripsi = "Tempat ini tepat untuk berwisata sambil belajar aneka tanaman herbal. Selain sebagai kawasan agrowisata, tempat ini juga sebagai tempat produksi jamu godhog, mulai dari produksi sampai penbibitan dan penanaman bahan baku semuanya dilakukan di tempat ini.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FMerapi_Farma_Herbal.mp4?alt=media&token=3d480b31-16a3-4709-afa4-0ac189d1cb6b";
+            int gambar = R.drawable.img_merapi_farma_herbal;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 5 Listener
@@ -144,6 +231,28 @@ public class AgroActivity extends FragmentActivity {
             cardView5.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView5.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "taman buah mekarsari";
+            String lokasi = "Jalan Raya Cileungsi -Jonggol KM.3, Mekarsari, Cileungsi, Kabupaten Bogor, Jawa Barat 16820";
+            String deskripsi = "Taman Rekreasi dan Buah Mekarsari atau Taman Wisata Mekarsari adalah pusat konservasi keanekaragaman hayati buah-buahan tropis, dari seluruh wilayah di Indonesia dan belahan dunia lainnya.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FTaman_Buah_Mekarsari.mp4?alt=media&token=53c829d5-d185-45a1-a0ab-c593a828973a";
+            int gambar = R.drawable.img_taman_buah_mekarsari;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 6 Listener
@@ -160,6 +269,28 @@ public class AgroActivity extends FragmentActivity {
             cardView6.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView6.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "bagus agro pelaga";
+            String lokasi = "Jl. Raya Pura Pucak Mangu, Pelaga, Kec. Petang, Kabupaten Badung, Bali 80353";
+            String deskripsi = "Rumah bergaya Bali yang elegan dilengkapi beranda berfurnitur lengkap dengan pemandangan taman tropis, fasilitas pembuat teh dan kopi, serta sajian buah tropis segar setiap harinya. Fasilitas eco-resor ini meliputi 2 restoran, taman, kolam renang outdoor, dan pertunjukan pembuatan produk tradisional.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FBagus_Agro_Pelaga.mp4?alt=media&token=28c2a50a-8368-49c0-9498-297038750dae";
+            int gambar = R.drawable.img_bagus_agro_pelaga;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 7 Listener
@@ -176,6 +307,28 @@ public class AgroActivity extends FragmentActivity {
             cardView7.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView7.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "milkindo green farm";
+            String lokasi = "Ngempit, Tegalsari, Kec. Kepanjen, Kabupaten Malang, Jawa Timur 65163";
+            String deskripsi = "Wisata edukasi sapi perah Milkindo Berka Abadi di Desa Tegalsari Kepanjen kabupaten malang. terdapat playground dan spot berfoto selfie yang instagramable.";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FMilkindo_Green_Farm.mp4?alt=media&token=c4fcc80b-9fa6-41b2-bc33-f1a53e56da52";
+            int gambar = R.drawable.img_milkindo_green_farm;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
         // Card View 8 Listener
@@ -192,6 +345,39 @@ public class AgroActivity extends FragmentActivity {
             cardView8.setForeground(getResources().getDrawable(R.color.white40));
 
             new Handler().postDelayed(() -> cardView8.setForeground(null),delay);
+
+            // Pindah Activity
+            Intent intent = new Intent(this,DetailActivity.class);
+
+            // Deskripsi Input ke Activity tujuan
+            String judul = "narmada botanic green";
+            String lokasi = "Jl. Wirabakti, Gandari, Narmada, Lembuak, Kec. Narmada, Kabupaten Lombok Barat, Nusa Tenggara Bar. 83371";
+            String deskripsi = "Narmada Botanic Garden merupakan wisata berupa taman bunga, dimana taman binga yang indah ini berada di Dusun Narmada. Wisatawan yang berkunjung akan disuguhi aneka jenis bunga yang sedang bermekaran, selain itu ada juga jenis buah dan sayur yang di tanam disini. Wisata yang indah dan menarik in memiliki berbagai daya tarik dan fasilitas unik lainnya, keindahan bunga yang bermekaran warna warni tentunya spot instagramable yang indah akan tercipta di berbagai sudut tempat wisata ini";
+            String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FNarmada_Botanic_Garden.mp4?alt=media&token=3bbf9c66-20c0-4346-bfec-b2a47ee1ac37";
+            int gambar = R.drawable.img_narmada_botanic_green;
+            int background = R.drawable.bg_agro;
+
+            // Membawa Item dari Deskripsi di atas
+            intent.putExtra("judul", judul);
+            intent.putExtra("lokasi",lokasi);
+            intent.putExtra("deskripsi", deskripsi);
+            intent.putExtra("videoLink", videoLink);
+            intent.putExtra("gambar", gambar);
+            intent.putExtra("background", background);
+
+            // Mulai pindah
+            startActivityForResult(intent, REQUEST_CODE);
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                // Aksi yang diambil setelah kembali dari TujuanActivity
+            }
+        }
     }
 }

@@ -79,7 +79,6 @@
                 android:text="gunung ijen"
                 android:textAppearance="@style/text_title" />
 
-
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
