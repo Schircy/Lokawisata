@@ -22,6 +22,8 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.FragmentActivity;
 
+import com.bumptech.glide.Glide;
+
 import org.w3c.dom.Text;
 
 public class DetailActivity extends FragmentActivity {
@@ -61,7 +63,7 @@ public class DetailActivity extends FragmentActivity {
         String lokasi = getIntent().getStringExtra("lokasi");
         int gambar = getIntent().getIntExtra("gambar",0);
         int background = getIntent().getIntExtra("background",0);
-        int qrCode = getIntent().getIntExtra("qrCode", 0);
+        String qrCode = getIntent().getStringExtra("qrCode");
 
         // SET Perubahan Item Sesuai dari Item yang didapat dari Intent dari Activity sebelumnya
         titleDesk.setText(judul);
@@ -69,7 +71,8 @@ public class DetailActivity extends FragmentActivity {
         textMap.setText(lokasi);
         bgGambar.setBackgroundResource(gambar);
         bgCard.setImageResource(gambar);
-        imageMap.setBackgroundResource(qrCode);
+        Glide.with(this)
+                .load(qrCode).into(imageMap);
 
         View rootLayout = findViewById(R.id.root_detail);
         rootLayout.setBackgroundResource(background);

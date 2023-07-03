@@ -86,6 +86,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Desa Balefadorotuho, Kecamatan Lahewa, Kabupaten Nias Utara";
             String deskripsi = "Keindahannya terletak pada batu karang raksasa yang berbentuk bundar di bibir pantai. Wisatawan kerap mendokumentasikan diri di batu karang tersebut. Batunya keras dan tidak tajam, persis seperti batu raksasa yang berserakan di pinggir pantai, jika dipandang dari jauh. Batuan karang yang terhampar itu memiliki bentuk unik, ada yang menyerupai bentuk otak manusia sehingga beberapa masyarakat sekitar menyebutnya dengan Batu Otak.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FPantai_Tureloto.mp4?alt=media&token=9526eadb-cba9-4633-a084-4c8cfba6c8f6";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fpantai%20tureloto.png?alt=media&token=2ebd8c25-54ef-406d-96a3-014691af4baf";
             int gambar = R.drawable.img_pantai_tureloto;
             int background = R.drawable.bg_bahari;
 
@@ -96,6 +97,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -124,6 +126,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Walasiho, Kec. Wawo, Kabupaten Kolaka Utara, Sulawesi Tenggara 93552";
             String deskripsi = "Danau Biru Kaloka memiliki kedalaman mencapai 7 meter dengan air yang jernih kebiruan. Danau ini diperkirakan memiliki tiga mata air dalam skala besar dari bebatuan bukit dan juga beberapa mata air dari dalam danau itu sendiri. Karena letaknya yang berada di kaki bukit dengan dinding batu menjulang membuat danau ini terlihat teduh.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FDanau_Biru_Kaloka.mp4?alt=media&token=22330f8e-94fd-4114-8620-d03a7e91fd01";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fdanau%20biru%20kaloka.png?alt=media&token=65203e24-5fb1-4687-bfbc-b763f361eb25";
             int gambar = R.drawable.img_danau_biru_kaloka;
             int background = R.drawable.bg_bahari;
 
@@ -134,6 +137,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -162,6 +166,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Kabupaten Berau, Kalimantan Timur";
             String deskripsi = "Kepulauan Derawan adalah sebuah kepulauan yang berada di Kabupaten Berau, Kalimantan Timur. Di kepulauan ini terdapat sejumlah objek wisata bahari menawan, salah satunya Taman Bawah Laut yang diminati wisatawan mancanegara terutama para penyelam kelas dunia.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FKepulauan_Derawan.mp4?alt=media&token=f3e22a53-5de7-4a46-843b-a6a90d59782f";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fkepulauan%20derawan.png?alt=media&token=1badd2cb-4819-42c5-8c67-1f40b72467d0";
             int gambar = R.drawable.img_kepulauan_derewan;
             int background = R.drawable.bg_bahari;
 
@@ -172,6 +177,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -200,6 +206,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Pulau Seram, kecamatan Seram Utara, Maluku Tengah, Maluku";
             String deskripsi = "Pantai Ora merupakan pantai alami dengan kejernihan airnya dan kebersihan pasirnya. Kawasan ini juga memiliki keindahan bawah laut yang sangat memesona. Pantai Ora memiliki daratan yang tidak terlalu luas, karena wilayahnya sebagian besar berupa tebing, hutan tropis, dan barisan pegunungan.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FPantai_Ora.mp4?alt=media&token=2b15ee1c-4f32-4754-9700-07d71c09a4f3";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fpantai%20ora.png?alt=media&token=21dfe30a-f641-4c1d-9587-882ea1115df9";
             int gambar = R.drawable.img_pantai_ora;
             int background = R.drawable.bg_bahari;
 
@@ -210,6 +217,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -238,6 +246,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Kecamatan Sungai Liat, Kabupaten Bangka, Kepulauan Bangka Belitung.";
             String deskripsi = "Disebut Pantai Parai atau Pantai Parai Tenggiri karena dahulu banyak nelayan yang mendatangkan ikan tenggiri dari pesisir pantai ini. Tetapi, wajah Pantai Parai Tenggiri telah berubah. Tidak ada lagi nelayan yang bisa dilihat di tepian pantai. Di sekitar pantai ini, terdapat berbagai penginapan yang bisa dijadikan pilihan bagi pengunjung yang ingin berlama-lama menikmati Pantai Parai Tenggiri. Soal keindahan, Pantai Parai Tenggiri memiliki pasir putih dengan kelembutan yang menyerupai tepung. Bebatuan granit yang tersebar juga menjadi hiasan yang indah untuk dipandang. Belum lagi air laut yang bewarna biru kehijauan menambah sensasi saatberkunjung ke Pantai Parai Tenggiri.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FPantai_Parai_Tenggiri.mp4?alt=media&token=abed9557-ce54-4bc6-83ea-40f6e5c05d8b";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fpantai%20parai%20tenggiri.png?alt=media&token=6a6b39fc-1046-4e16-b349-3ec6cb75c25d";
             int gambar = R.drawable.img_pantai_parai_tenggiri;
             int background = R.drawable.bg_bahari;
 
@@ -248,6 +257,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -276,6 +286,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Kabupaten Raja Ampat, Provinsi Papua Barat";
             String deskripsi = "Nama Raja Ampat sendiri diyakini berasal dari legenda masyarakat setempat yang percaya bahwa zaman dahulu kala ada seorang wanita yang menemukan tujuh telur, empat telur tersebut menetas menjadi raja-raja yang berkuasa di empat pulau utama. Tersisa tiga lainnya, satu menjadi batu, satu menjadi wanita, dan satu lagi menjadi makhluk gaib atau hantu.Terlepas legenda yang dipercayai masyarakat setempat, keindahan yang disuguhkan oleh Raja Ampat merupakan fakta yang tak bisa diganggu gugat. Wilayah perairan Raja Ampat adalah salah satu destinasi diving terbaik di dunia. Destinasi ini memiliki kekayaan dan keunikan spesies yang tinggi dengan ditemukannya 1.318 jenis ikan, 699 jenis moluska (hewan lunak), dan 537 jenis terumbu karang. Rasakan sendiri sensasi menyelam dan bertemu dengan ragam jenis biota laut yang unik, seperti kuda laut kerdil (pygmy seahorse), ikan kelelawar, hingga dugong bisa kamu temukan di wilayah perairan Raja Ampat.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FKepulauan_Raja_Ampat.mp4?alt=media&token=e876faba-624d-42f7-9c71-d8694cf6cc63";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fkabupaten%20raja%20ampat.png?alt=media&token=6ea8bb94-c41c-428e-8506-ca4520940f3e";
             int gambar = R.drawable.img_kabupaten_raja_ampat;
             int background = R.drawable.bg_bahari;
 
@@ -286,6 +297,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -314,6 +326,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Jl. Raya Padang-Painan, Teluk Bayur, Padang Selatan, Kota Padang, Sumatera Barat.";
             String deskripsi = "Pantai Nirwana ialah sebuah pantai di Padang, tepatnya di Padang Selatan, yang memiliki batu karang dan koral yang bertebaran di sepanjang pantai. Selain itu, deretan pohon kelapa pun ikut menghiasi Pantai Nirwana.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FPantai_Nirwana.mp4?alt=media&token=22ff94c1-4573-4fe4-9e92-3db198c85669";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fpantai%20nirwana.png?alt=media&token=cfea95b2-090d-4f2e-9b27-f50a30cdd520";
             int gambar = R.drawable.img_pantai_nirwana;
             int background = R.drawable.bg_bahari;
 
@@ -324,6 +337,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -352,6 +366,7 @@ public class BahariActivity extends FragmentActivity {
             String lokasi = "Jalan Bunaken, Kepulauan Bunaken, Kota Manado, Sulawesi Utara";
             String deskripsi = "Taman Nasional Bunaken merupakan kawasan pelestarian ekosistem tropis perairan yang berada di pusat segitiga terumbu karang dunia.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FTaman_Nasional_Bunaken.mp4?alt=media&token=282d74cc-6f0b-499a-9abb-58334b939ff2";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Ftaman%20nasional%20bunaken.png?alt=media&token=28123ed4-f824-45a5-ba6a-78c5cc224b00";
             int gambar = R.drawable.img_taman_nasional_bunaken;
             int background = R.drawable.bg_bahari;
 
@@ -362,6 +377,7 @@ public class BahariActivity extends FragmentActivity {
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);

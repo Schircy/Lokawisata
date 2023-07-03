@@ -188,6 +188,7 @@ public class MainActivity extends Activity{
             String lokasi = "Desa Tamansari, Kecamatan Licin, Kabupaten Banyuwangi, Jawa Timur";
             String deskripsi = "Gunung Ijen adalah sebuah gunung berapi yang terletak di perbatasan Kabupaten Banyuwangi dan Kabupaten Bondowoso, Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.386 mdpl. Gunung Ijen terakhir meletus pada tahun 1999. Salah satu fenomena alam yang paling terkenal dari Gunung Ijen adalah blue fire (api biru) di dalam kawah yang terletak di puncak gunung tersebut. Pendakian gunung ini bisa dimulai dari dua tempat, yakni dari Banyuwangi atau dari Bondowoso.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_cagar_alam%2FGunung_Ijen.mp4?alt=media&token=8371a478-ceb3-481f-a34d-e81d92ea2fbc";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_cagar_alam%2Fgunung%20ijen.png?alt=media&token=23a05989-1b7d-4fd1-b4d6-9207cefd281f";
             int gambar = R.drawable.img_gunung_ijen;
             int background = R.drawable.bg_alam;
 
@@ -198,6 +199,7 @@ public class MainActivity extends Activity{
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -226,6 +228,7 @@ public class MainActivity extends Activity{
             String lokasi = "Jalan Kapten Mulyadi, Desa Kedung Lumbu, Kec. Pasar Kliwon, Kota Surakata.";
             String deskripsi = "Galabo adalah singkatan dari Gladag Langen Bogan, sebuah tempat wisata kuliner malam di kota Solo. Sebelum bergeser, lokasinya berada di sebelah timur bundaran Gladag, tepatnya di Jalan Mayor Sunaryo depan Beteng Trade Center dan Pusat Grosir Solo. Lantaran berada di area jalan, Galabo tutup pada siang hari dan hanya buka saat malam. Setelah Juni 2018, Galabo ditempatkan di kawasan parkir sebelah selatan Benteng Vastenburg atau tepat di depan Pusat Grosir Solo (PGS). Lokasi baru ini dinilai lebih representatif karena tak perlu menutup jalan.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_kuliner%2FGalabo.mp4?alt=media&token=7e875493-0bf2-4a4e-8ab8-10709c381aa5";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_kuliner%2Fgalabo%20solo.png?alt=media&token=f202cf54-09b9-46f9-99f1-6b2edb772990";
             int gambar = R.drawable.img_galabo;
             int background = R.drawable.bg_kuliner;
 
@@ -236,6 +239,7 @@ public class MainActivity extends Activity{
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -264,6 +268,7 @@ public class MainActivity extends Activity{
             String lokasi = "Kabupaten Raja Ampat, Provinsi Papua Barat";
             String deskripsi = "Nama Raja Ampat sendiri diyakini berasal dari legenda masyarakat setempat yang percaya bahwa zaman dahulu kala ada seorang wanita yang menemukan tujuh telur, empat telur tersebut menetas menjadi raja-raja yang berkuasa di empat pulau utama. Tersisa tiga lainnya, satu menjadi batu, satu menjadi wanita, dan satu lagi menjadi makhluk gaib atau hantu.Terlepas legenda yang dipercayai masyarakat setempat, keindahan yang disuguhkan oleh Raja Ampat merupakan fakta yang tak bisa diganggu gugat. Wilayah perairan Raja Ampat adalah salah satu destinasi diving terbaik di dunia. Destinasi ini memiliki kekayaan dan keunikan spesies yang tinggi dengan ditemukannya 1.318 jenis ikan, 699 jenis moluska (hewan lunak), dan 537 jenis terumbu karang. Rasakan sendiri sensasi menyelam dan bertemu dengan ragam jenis biota laut yang unik, seperti kuda laut kerdil (pygmy seahorse), ikan kelelawar, hingga dugong bisa kamu temukan di wilayah perairan Raja Ampat.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_bahari%2FKepulauan_Raja_Ampat.mp4?alt=media&token=e876faba-624d-42f7-9c71-d8694cf6cc63";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_bahari%2Fkabupaten%20raja%20ampat.png?alt=media&token=6ea8bb94-c41c-428e-8506-ca4520940f3e";
             int gambar = R.drawable.img_kabupaten_raja_ampat;
             int background = R.drawable.bg_bahari;
 
@@ -274,6 +279,7 @@ public class MainActivity extends Activity{
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -302,6 +308,7 @@ public class MainActivity extends Activity{
             String lokasi = "Jl. Raya Pura Pucak Mangu, Pelaga, Kec. Petang, Kabupaten Badung, Bali 80353";
             String deskripsi = "Rumah bergaya Bali yang elegan dilengkapi beranda berfurnitur lengkap dengan pemandangan taman tropis, fasilitas pembuat teh dan kopi, serta sajian buah tropis segar setiap harinya. Fasilitas eco-resor ini meliputi 2 restoran, taman, kolam renang outdoor, dan pertunjukan pembuatan produk tradisional.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FBagus_Agro_Pelaga.mp4?alt=media&token=28c2a50a-8368-49c0-9498-297038750dae";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fagrowisata%2Fbagus_argo_pelaga.png?alt=media&token=e1a99f40-5ef5-4999-9f1b-e0ede575fe9f";
             int gambar = R.drawable.img_bagus_agro_pelaga;
             int background = R.drawable.bg_agro;
 
@@ -312,6 +319,7 @@ public class MainActivity extends Activity{
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -340,6 +348,7 @@ public class MainActivity extends Activity{
             String lokasi = "Jl. Boyong No.KM 25, Kaliurang, Hargobinangun, Kec. Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582";
             String deskripsi = "Museum ini merupakan salah satu museum yang mengenalkan kebudayaan para bangsawan Mataram. Selain menampilkan kebudayaan masa Kerajaan Mataram Islam, Museum Ullen Sentalu juga menampilkan kehidupan para bangsawan di masa Kasunanan Surakarta, Kasultanan Yogyakarta, Praja Mangkunegaran, dan Kadipaten Pakualaman.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fwisata_budaya%2FUllen_Sentalu.mp4?alt=media&token=5ea3ff9e-c013-40d6-80b9-77bb9203d9bb";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fwisata_budaya%2Fmuseum%20ullen%20sentalu.png?alt=media&token=7c617628-8146-47e7-a105-2b8adca07183";
             int gambar = R.drawable.img_museum_ullen_sentalu;
             int background = R.drawable.bg_budaya;
 
@@ -350,6 +359,7 @@ public class MainActivity extends Activity{
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
@@ -379,6 +389,7 @@ public class MainActivity extends Activity{
             String lokasi = "Jl. Kaliurang No.Km.20, Sawungan, Hargobinangun, Kec. Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582";
             String deskripsi = "Taman pertanian tempat pengunjung bisa memerah susu kambing, memberi makan kelinci & selfie di Santorini mini.";
             String videoLink = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/video%2Fagrowisata%2FBhumi_Merapi.mp4?alt=media&token=57b35ae1-6a5e-497c-aec6-792babfb9da4";
+            String qrCode = "https://firebasestorage.googleapis.com/v0/b/lokawisata-app.appspot.com/o/qrcode%2Fagrowisata%2Fbhumi_merapi.png?alt=media&token=b0610456-8f44-4fcc-963e-6b8e108989b8";
             int gambar = R.drawable.img_bhumi_merapi;
             int background = R.drawable.bg_agro;
 
@@ -389,6 +400,7 @@ public class MainActivity extends Activity{
             intent.putExtra("videoLink", videoLink);
             intent.putExtra("gambar", gambar);
             intent.putExtra("background", background);
+            intent.putExtra("qrCode", qrCode);
 
             // Mulai pindah
             startActivityForResult(intent, REQUEST_CODE);
